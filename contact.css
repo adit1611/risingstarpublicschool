@@ -1,0 +1,387 @@
+@import url('https://fonts.googleapis.com/css2?family=Anta&display=swap');
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    /* color: aliceblue; */
+}
+
+body {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background: url(./gallery/pexels-mudassir-ali-2680270.jpg);
+    
+}
+.container{
+    display: block;
+}
+.title{
+    display: flex;
+    h1{
+        padding: 20px 10px;
+        font-size: 60px;
+        font-weight: bolder;
+        font-style: inherit;
+        font-family:"Anta", sans-serif;
+        background-image: linear-gradient(to right, #ff5f6d, #ffc371);
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
+        text-shadow: 8px 2px 2px rgba(6, 115, 204, 0.3);
+    }
+
+}
+
+
+  #logosar{
+    padding:20px 10px;
+    height: 120px;
+    width: 100px;
+    border-radius: 50%;
+  }
+
+  .menu-icon{
+    display: none;
+  }
+  .menu-icon h2{
+          font-size: 30px;
+          color: dodgerblue;
+          text-align: left;
+    }
+
+    nav ul{
+        /* background-color: aqua; */
+        padding-right: 15px;
+        list-style: none;
+    }
+
+    nav ul li{
+        display: inline-block;
+    }
+
+    nav ul li a{
+        display: flex;
+        text-decoration: none;
+        font-size: 30px;
+        padding-left: 40px;
+        background-image: linear-gradient( #fa4300, #cecdcb);
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
+        font-weight: 800;
+
+    }
+
+    #menu {
+        display: none;
+    }
+
+
+
+    main{
+        margin-top: 80px;
+        font-style: italic;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+    }
+
+    #text{
+        font-size: 40px;
+        color: darkturquoise;
+    }
+
+    main hr {
+        height: 10px;
+         background-color: rgba(236, 170, 28, 0.874);
+         border-color: rgba(236, 170, 28, 0.874);
+         border: 0;
+        }
+
+
+    
+
+    main div{
+        padding:40px ;
+    }
+    main h3{
+        font-size: 25px;
+        padding-top: 10px;
+    }
+
+    .content{
+        display: flex;
+        background: linear-gradient(to bottom left , rgba(66, 130, 108, 0.37),rgba(46, 243, 46, 0.511));
+        border-radius: 10px;
+        margin-top: 10px;
+    }
+
+    .contact{
+        position: absolute;
+        top: 78vh;
+        left: 30vw;
+        height: 350px;
+        width: 380px;
+        background-color: #2a82e655;
+        padding-top: -20vh;
+        border-radius: 20px;
+        box-shadow: -4px 3px 0px rgba(17, 91, 250, 0.68);
+        font-size: 20px;
+        color: #b833ff;
+    }
+
+        .handle{
+            margin-top: -35px;
+            margin-left: -40px;
+            color: #ff5f6d;
+            img{
+                height: 50px;
+                width: 50px;
+                border-radius: 50%;
+            }
+        }
+
+        #xhandle{
+            border-radius: 50%;
+            height: 40px;
+            width: 40px;
+            margin-left: 10px;
+        }
+        .query{
+            font-size: 50px;
+            background-image: linear-gradient(to bottom left, gray 30%,rgb(191, 0, 255));
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+            font-weight: 800;
+        }
+        
+    footer{
+        position: absolute;
+        top: 200vh;
+        bottom: 0%;
+        width: 100%;
+        display: flex;
+        font-size: large;
+        font-weight: 600;
+        color: black;
+        background-color: black;
+    }
+
+    .main{
+        display: flex;
+    }
+    .left{
+        display: flex;
+        width: 600px;
+        position: relative;
+        left: 45px;
+    }
+    .left img{
+        height: 50px;
+        width: 50px;
+        position: relative;
+        left: 40%;
+        top: -12px;
+        justify-content: space-evenly;
+    }
+
+    .left img:nth-child(2){
+        position: relative;
+        left: 12px;
+    }
+    #svg{
+        height: 30px;
+        width: 30px;
+        position: relative;
+        left: 42px;
+        top: -1px;
+    }
+
+    .right{
+        display: flex;
+        position: relative;
+        left: 80%;
+        justify-content: space-around;
+    }
+    .right p{
+        align-items: right;
+        padding-left: 15px;
+    }
+  @media (max-height:1600px) and (max-width: 800px) {
+
+    body {
+        background-size: cover; /* Adjusts background size for smaller screens */
+    }
+    .container{
+        display: flex;
+        justify-content: space-between;
+        
+    }
+
+    .container div{
+        position: absolute;
+    }
+    #logosar{
+        height: 9vh;
+        width: 9vh;
+        margin-left: 10px;
+        margin-top: 15px;
+
+    }
+      .title{
+        width: 150vw;
+        font-size: 150vh;
+      }
+
+     .title h1{
+            font-size: 120px;
+            padding-left: 15px;
+            font-weight: 800;
+        }
+  
+      .menu{
+            position: absolute;
+            left: 120vw;
+       }
+
+        #menu-img{
+            height: 200px;
+            width: 200px;
+            position: absolute;
+            left: 80vw;
+            top: 10%;
+          }
+
+        .menu-icon{
+            display: block;
+            position: absolute;
+            top: 5px;
+            right: 10px;
+        }
+       .menu-icon h2{
+                position: absolute;
+                left: 82vw;
+                margin-top: 200px;
+                font-size: 60px;
+                font-weight: bolder;
+                color: dodgerblue;
+                text-align: right;
+           }
+     
+
+
+    .menu-list{
+                position: fixed;
+                top: 14%;
+                left: 0;
+                display: none;
+                height: 100%;
+                width: 100%;
+                list-style: none;
+                text-align: center;
+                background-color: rgba(54, 10, 23, 0.913);
+                z-index: 999;
+                transition: all 13s ease-in-out;
+              }
+    nav ul li{
+        margin: 200px 320px;
+        display: flex;
+        text-align: center;
+    }
+
+    .menu-list a{
+        display: block;
+        font-size: 160px;
+        padding: 40px 100px;
+        text-align: center;
+    }
+    
+      #menu:checked ~ .menu-list{
+              display: block;
+      }
+
+
+      main{
+        margin-top: 30vh;
+      }
+
+      #text{
+            font-size: 70px;
+      }
+
+      main div{
+        width: 230vw;
+      }
+
+      .content{
+        display: block;
+        height: 200vh;
+        width: 240vw;
+      }
+        .map iframe{
+            height: 100vh;
+            width: 90%;
+            border-radius: 8px;
+            font-size: 80px;
+        }
+      .contact{
+        position: absolute;
+        top: 88vh;
+        height: 800px;
+        width: 160vw;
+        font-size: 60px;
+        img{
+            height: 140px;
+            width: 140px;
+            margin-top: 20px;
+        }
+      }
+
+      #xhandle{
+        height: 125px;
+        width: 125px;
+      }
+      .query{
+        position: relative;
+        top: 10%;
+        /* left: 30%; */
+        font-size: 70px;
+        text-align: center;
+      }
+
+      footer{
+        margin-top: 150vh;
+        height: 260px;
+        width: 260vw;
+        /* left: 2%; */
+        background-color: rgba(128, 128, 128, 0.505);
+      }
+
+      .left{
+        display: block;
+        flex-wrap: wrap;
+        font-size: 60px;
+      }
+
+      .left img{
+        top: 20px;
+        left: -20px;
+        height: 130px;
+        width: 130px;
+      }
+
+      #svg
+      {
+        top: 10px;
+        left: -10px;
+        height: 100px;
+        width: 100px;
+      }
+
+      .right{
+        left: 100vw;
+        padding: 50px;
+        font-size: 50px;
+        display: block;
+        gap: 50px;
+        align-content: space-between;
+    }
+}

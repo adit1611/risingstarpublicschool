@@ -1,0 +1,311 @@
+@import url('https://fonts.googleapis.com/css2?family=Anta&display=swap');
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    /* color: aliceblue; */
+}
+
+body {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-image: url(./gallery/acadbg.jpg);
+    background-repeat: no-repeat;
+}
+.container{
+    display: block;
+}
+.title{
+    display: flex;
+    h1{
+        padding: 20px 10px;
+        font-size: 60px;
+        font-weight: bolder;
+        font-style: inherit;
+        font-family:"Anta", sans-serif;
+        background-image: linear-gradient(to right, #ff5f6d, #449cd3);
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
+        text-shadow: 8px 2px 2px rgba(6, 115, 204, 0.3);
+    }
+
+}
+
+
+  #logosar{
+    padding:20px 10px;
+    height: 120px;
+    width: 100px;
+    border-radius: 50%;
+  }
+
+  .menu-icon{
+    display: none;
+  }
+  .menu-icon h2{
+          font-size: 30px;
+          color: dodgerblue;
+          text-align: left;
+    }
+
+    nav ul{
+        /* background-color: aqua; */
+        padding-right: 15px;
+        list-style: none;
+    }
+
+    nav ul li{
+        display: inline-block;
+    }
+
+    nav ul li a{
+        display: flex;
+        text-decoration: none;
+        font-size: 30px;
+        padding-left: 40px;
+        background-image: linear-gradient( #fa4300, #cecdcb);
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
+        font-weight: 800;
+
+    }
+
+    #menu {
+        display: none;
+    }
+
+    main{
+        margin-top: 80px;
+        font-style: italic;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        h1{
+            color: green;
+        }
+    }
+
+
+    #line{
+        height: 10px;
+        background-color: #f16528;
+    }
+
+    main div{
+        padding:40px ;
+    }
+    main h3{
+        font-size: 25px;
+        padding-top: 10px;
+    }
+    main ul{
+        list-style: square;
+        font-size: 22px;
+        padding-left: 30px;
+        padding-top: 5px;
+        gap: 40px;
+    }
+
+    footer{
+        position: absolute;
+        top: 180vh;
+        bottom: 0%;
+        width: 100%;
+        display: flex;
+        font-size: large;
+        font-weight: 600;
+        color: black;
+        background-color: black;
+    }
+
+    .main{
+        display: flex;
+    }
+    .left{
+        display: flex;
+        width: 600px;
+        position: relative;
+        left: 45px;
+    }
+    .left img{
+        height: 50px;
+        width: 50px;
+        position: relative;
+        left: 40%;
+        top: -12px;
+        justify-content: space-evenly;
+    }
+
+    .left img:nth-child(2){
+        position: relative;
+        left: 12px;
+    }
+    #svg{
+        height: 30px;
+        width: 30px;
+        position: relative;
+        left: 42px;
+        top: -1px;
+    }
+
+    .right{
+        display: flex;
+        position: relative;
+        left: 80%;
+        justify-content: space-around;
+    }
+    .right p{
+        align-items: right;
+        padding-left: 15px;
+    }
+  @media (max-height:1600px) and (max-width: 800px) {
+
+    body {
+        background-size: cover; /* Adjusts background size for smaller screens */
+    }
+    .container{
+        display: flex;
+        justify-content: space-between;
+        
+    }
+
+    .container div{
+        position: absolute;
+    }
+    #logosar{
+        height: 9vh;
+        width: 9vh;
+        margin-left: 10px;
+        margin-top: 15px;
+
+    }
+      .title{
+        width: 150vw;
+        font-size: 150vh;
+      }
+
+     .title h1{
+            font-size: 120px;
+            padding-left: 15px;
+            font-weight: 800;
+        }
+
+  
+      .menu{
+            position: relative;
+            left: 120vw;
+       }
+
+        #menu-img{
+            height: 200px;
+            width: 200px;
+            position: absolute;
+            left: 80vw;
+            top: 10%;
+          }
+
+        .menu-icon{
+            display: block;
+            position: absolute;
+            top: 5px;
+            right: 10px;
+        }
+       .menu-icon h2{
+                position: absolute;
+                left: 82vw;
+                margin-top: 200px;
+                font-size: 60px;
+                font-weight: bolder;
+                color: dodgerblue;
+                text-align: right;
+           }
+     
+
+
+    .menu-list{
+                position: fixed;
+                top: 14%;
+                left: 0;
+                display: none;
+                height: 100%;
+                width: 100%;
+                list-style: none;
+                text-align: center;
+                background-color: rgba(54, 10, 23, 0.913);
+                z-index: 999;
+                transition: all 13s ease-in-out;
+              }
+    nav ul li{
+        margin: 200px 320px;
+        display: flex;
+        text-align: center;
+    }
+
+    .menu-list a{
+        display: block;
+        font-size: 150px;
+        padding: 40px 100px;
+        font-weight: 800;
+        text-align: center;
+    }
+    
+      #menu:checked ~ .menu-list{
+              display: block;
+      }
+
+
+      main{
+        margin-top: 30vh;
+      }
+
+      main h1{
+            font-size: 60px;
+      }
+
+      main div{
+        width: 230vw;
+        h3{
+            font-size: 50px;
+            width: 100vw;
+        }
+        li{
+            font-size: 45px;
+        }
+      }
+      footer{
+        margin-top: 65vh;
+        height: 260px;
+        width: 240vw;
+        /* left: 2%; */
+        background-color: rgba(128, 128, 128, 0.505);
+      }
+
+      .left{
+        display: block;
+        flex-wrap: wrap;
+        font-size: 60px;
+      }
+
+      .left img{
+        top: 20px;
+        left: -20px;
+        height: 130px;
+        width: 130px;
+      }
+
+      #svg
+      {
+        top: 10px;
+        left: -10px;
+        height: 100px;
+        width: 100px;
+      }
+
+      .right{
+        left: 100vw;
+        padding: 50px;
+        font-size: 50px;
+        display: block;
+        gap: 50px;
+        align-content: space-between;
+    }
+}
